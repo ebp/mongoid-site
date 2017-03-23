@@ -6,8 +6,12 @@
 
 # Helpers
 helpers do
+  def link_to_root(text = nil, options = nil, &block)
+    href = settings.http_prefix.to_s.length > 0 ? settings.http_prefix : '/'
+    link_to(text, href, options, &block)
+  end
 
-  def link_to_active(text, href, options = nil)
+  def link_to_active(text, href, options = nil, &block)
     if "/#{request.path}" == href
       if options
         class_options = options[:class] || ""
@@ -17,7 +21,10 @@ helpers do
         options = { class: "active" }
       end
     end
-    link_to(text, href, options)
+    if href =~ /^\// && settings.http_prefix.to_s.length > 0
+      href = href.sub(/^\//, settings.http_prefix)
+    end
+    link_to(text, href, options, &block)
   end
 
   def render_title
@@ -50,4 +57,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+
+  set :http_prefix, "/mongoid-site/"
 end
