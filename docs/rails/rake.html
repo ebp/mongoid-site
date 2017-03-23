@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta content='A Ruby ODM for MongoDB' name='description' />
+    <meta content='mongoid, mongodb, ruby, rails, odm, durran jordan' name='keywords' />
+    <link href="/mongoid-site/stylesheets/coderay.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/mongoid-site/stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body>
+    <div id='container'>
+      <div class='navigation'>
+            <a href="#"><img src="/mongoid-site/images/mongoid-logo-small.png" />
+            </a>
+            
+            <ul class='navigation'>
+              <li class='area'><a class="area" href="/mongoid-site/">home</a></li>
+              <li class='area'><a class="area" href="/mongoid-site/docs.html">docs</a></li>
+              <li><a class="section" href="/mongoid-site/docs/installation.html">installation</a></li>
+              <li><a class="section" href="/mongoid-site/docs/documents.html">documents</a></li>
+              <li><a class="section" href="/mongoid-site/docs/persistence.html">persistence</a></li>
+              <li><a class="section" href="/mongoid-site/docs/querying.html">querying</a></li>
+              <li><a class="section" href="/mongoid-site/docs/relations.html">relations</a></li>
+              <li><a class="section" href="/mongoid-site/docs/identity_map.html">identity map</a></li>
+              <li><a class="section" href="/mongoid-site/docs/callbacks.html">callbacks</a></li>
+              <li><a class="section" href="/mongoid-site/docs/validation.html">validation</a></li>
+              <li><a class="section" href="/mongoid-site/docs/indexing.html">indexing</a></li>
+              <li><a class="section" href="/mongoid-site/docs/extras.html">extras</a></li>
+              <li><a class="section" href="/mongoid-site/docs/rails.html">rails</a></li>
+              <li><a class="subsection" href="/mongoid-site/docs/rails/multi_parameter_attributes.html">multi-param attributes</a></li>
+              <li><a class="subsection active" href="/mongoid-site/docs/rails/rake.html">rake tasks</a></li>
+              <li><a class="subsection" href="/mongoid-site/docs/rails/railties.html">railties</a></li>
+              <li><a class="section" href="/mongoid-site/docs/extensions.html">extensions</a></li>
+              <li><a class="section" href="/mongoid-site/docs/upgrading.html">upgrading</a></li>
+              <li><a class="section" href="/mongoid-site/docs/contributing.html">contributing</a></li>
+              <li class='area'><a class="area" href="/mongoid-site/performance.html">performance</a></li>
+              <li class='area'><a class="area" href="/mongoid-site/credits.html">credits</a></li>
+              <li class='area'><a class="area" href="/mongoid-site/links.html">links</a></li>
+            </ul>
+          </div>
+      <div class='main'>
+        <div class='header'>
+              <a href="http://twitter.com/mongoid/"><img src="/mongoid-site/images/twitter-logo.png" />
+              </a>
+              <a href="http://github.com/mongoid/"><img src="/mongoid-site/images/github-logo.png" />
+              </a>
+            </div>
+        <div class='content'>
+              <h1>rake tasks</h1>
+              <p>
+                Mongoid provides the following rake tasks when used in a Rails 3 environment:
+              </p>
+              <p>
+                <tt>db:create</tt>: Exists only for dependency purposes, does not actually
+                do anything.
+              </p>
+              <p>
+                <tt>db:create_indexes</tt>: Reads all index definitions from the models and
+                attempts to create them in the database.
+              </p>
+              <p>
+                <tt>db:drop</tt>: Drops all collections in the database with the exception of
+                the system collections.
+              </p>
+              <p>
+                <tt>db:migrate</tt>: Exists only for dependency purposes, does not actually
+                do anything.
+              </p>
+              <p>
+                <tt>db:schema:load</tt>: Exists only for framework dependency purposes, does
+                not actually do anything.
+              </p>
+              <p>
+                <tt>db:seed</tt>: Seeds the database from db/seeds.rb
+              </p>
+              <p>
+                <tt>db:setup</tt>: Creates indexes and seeds the database.
+              </p>
+              <p>
+                <tt>db:test:prepare</tt>: Exists only for framework dependency purposes, does
+                not actually do anything.
+              </p>
+            </div>
+        <div class='footer'>
+              Mongoid, 2009-2011, written and maintained by
+              <a href="http://github.com/durran">Durran Jordan</a>.
+            </div>
+        <div class='clear'></div>
+      </div>
+    </div>
+  </body>
+</html>
